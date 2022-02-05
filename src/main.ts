@@ -6,14 +6,14 @@ class PlayGame extends Phaser.Scene {
         super("PlayGame");
     }
     preload(): void {
-        this.load.image('coin', 'assets/coin.png');    
+       
     }
     create(): void {
         console.log('hello TS');
-        this.image = this.add.image(400, 300, 'coin');
+        
     }
     update(): void {
-        this.image.rotation += 0.01;   
+       
     }
 }
  
