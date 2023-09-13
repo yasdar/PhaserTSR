@@ -5,14 +5,47 @@
     <meta charset="utf-8">
     <title>My Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<script defer src="phaser-2f7f313bd8a10891e431.bundle.js"></script><script defer src="main-7b14599c31910ded3845.bundle.js"></script></head>
+<script defer src="phaser-2f7f313bd8a10891e431.bundle.js"></script><script defer src="main-6bd1cc5c5796ebf5aef7.bundle.js"></script></head>
 
 <body>
+<!-- prepare fonts-->
+  <div style="position: absolute; opacity: 0; left: 0; top:0">
+    <h1 style="font-family: 'Univers LT Std'; font-weight: bold; font-style: normal;">Univers LT Std</h1>
+    <h1 style="font-family: 'Univers LT Std'; font-weight: 500; font-style: normal;">Univers LT Std</h1>
+  </div>
+<!-- canvas-->
     <div id="GameDiv" align="center"></div>
-    <div style="position: absolute; opacity: 0; left: 0; top:0">
-      <h1 style="font-family: 'ITC Kabel Std'; font-weight: bold; font-style: normal;">ITC Kabel Std Bold</h1>
-      <h1 style="font-family: 'ITC Kabel Std'; font-weight: 500; font-style: normal;">ITC Kabel Std medium</h1>
+<!-- top div-->
+<div class="leftDiv" style="display: none;">
+  <p id='titleV' class="title">Leave-On Hair Oil</p>
+  <p id='contentV' class="content">Choose the right ingredient, drag and 
+    pour liquid into the flask  to complete 
+    the formulation.</p>
+    <div id="btvV" class="btn">
+      <p>SAMPLE GIVE-AWAY</p>
     </div>
+    <p id="footerid" class="footer">INGREDIENTS:</p>
+</div>
+
+<div class="logo">
+  <img src="./assets/images/logoM.png">
+</div>
+
+
+<div id="textZoneid" class="textZone" style="display: none;">
+  <p style="left: 9.5%;">Conditioning Agent STEPANQUAT® Soleil</p>
+  <p style="left: 22%;">Conditioning Oil</p>
+  <p style="left: 31.5%;">Emollient</p>
+  <p style="left: 61.5%;">Water</p>
+  <p style="left: 71.5%;">Fragrance</p>
+  <p style="left: 84%;">Antioxidant</p>
+</div>
+
+<div class="pagefooter" style="display: none;">
+  <p>© Stepan Company</p>
+</div>
+
+   
     
   </body>
 
