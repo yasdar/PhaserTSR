@@ -76,7 +76,7 @@ function Reseize() {
  if(Data.Me){
   setTimeout(() => {
     Data.Me.Arrange(window.innerHeight>window.innerWidth);
-  }, 100);
+  }, 75);
  
  }
 }

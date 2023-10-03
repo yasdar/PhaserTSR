@@ -21,21 +21,32 @@ body, html {
     font-style: normal;
     font-display: swap;
   }
-
+#GameDiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
   .textZone{
-    display: none;
+    pointer-events: none;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 24%;
     text-align: center;
   }
+  .onMobile{
+    top: 61%;
+    left: 0%;
+  }
+  .onDesktop{
+    top: 67%;
+    left: 3%;
+  }
+ 
 
   .textZone p{
     position: absolute;
     width: 10%;
-    top: 0;
-    left:10%;
     color:#4f4a4a ;
     font-family: 'Univers LT Std';
     font-size: 1.4vw;
@@ -44,9 +55,9 @@ body, html {
     margin: 0;
   }
 
+
  .pagefooter {
-  display: none;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -77,17 +88,18 @@ body, html {
 }
   .logo{
     position: absolute;
-    right: 290px;
-    top: 94px;
+    right: 17%;
+    top: 10%;
     transform: translate(100%, -50%);
-    width: 24%;
+    width: 14%;
     height: auto;
   }
   .logo img{
-    width: 276px;
+    width: 100%;
     height: auto;
   }
   .leftDiv{
+
     font-family: 'Univers LT Std';
     position: absolute;
     left: 22%;
@@ -111,36 +123,128 @@ body, html {
   padding: 0;
 }
 
+#footeridP{
+  display: none;
+}
+#footerid{
+  display: block;
+}
+.footerP{
+  position: absolute;
+  left: 5%;
+  top: 47%;
+}
+
+.flower1, .flower2{
+  position: absolute;
+}
+.flower1{
+  left: 0;
+  top:0;
+}
+.flower2{
+  right: 0;
+  bottom:0;
+}.flower1 img{
+  width: 15rem;
+}
+.flower2 img{
+  width: 10rem;
+}
+
+@media (orientation: landscape) {
+  .p1{left: 9.5%;top: 0%;}
+  .p2{left: 22%;top: 0%;}
+  .p3{left: 31.5%;top: 0%;}
+  .p4{left: 61.5%;top: 0%;}
+  .p5{left: 71.5%;top: 0%;}
+  .p6{left: 84%;top: 0%;}
+}
+
+
 @media (orientation: portrait) {
 
+  .textZone {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.textZone p {
+  width: 20%;
+  font-size: 3.2vw;
+  line-height: 4vw;
+}
+.p1{left: 12.5%;top: 0;}
+.p2{left: 36%;top: 0;}
+.p3{left: 62.5%;top: 0;}
+.p4{left: 12.5%;top: 91%;}
+.p5{left: 35.5%;top: 91%;}
+.p6{left: 62.5%;top: 91%;}
+
+#footerid{
+  display: none;
+}
+#footeridP{
+  display: block;
+  font-family: 'Univers LT Std';
+}
   .btn p {
     font-size: 2vw;
 }
-
+.logo {
+  position: absolute;
+  right: 2%;
+  top: 6%;
+  transform: translate(-2%, -50%);
+  width: 40%;
+  height: auto;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
   
-  .leftDiv{
-
-    font-family: 'Univers LT Std';
-    position: absolute;
-    left: 30%;
-    top: 0%;
-    transform: translate(0%, 10%);
-    width: 40%;
-    height: auto;
-    color: #4f4a4a;
+.leftDiv {
+  font-family: 'Univers LT Std';
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  transform: translate(0%, 10%);
+  width: 90%;
+  height: auto;
+  color: #4f4a4a;
 }
 .footer{
   text-align: center;
   font-size: 4vw;
-}.content{
+}.content {
   font-size: 3.5vw;
-    line-height: 1.3;
-}.title{
-  font-size: 4vw;
+  line-height: 1.3;
+  width: 76%;
+}.title {
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0;
   padding: 0;
+  text-align: left;
+  /* margin-left: 10%; */
+}#btvV{
+width: 50%;
+}
+#btvV p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+.flower1 img{
+  width: 8rem;
+}
+.flower2 img{
+  width: 5rem;
 }
 
 }

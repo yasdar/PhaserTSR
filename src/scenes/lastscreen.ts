@@ -20,8 +20,10 @@ export default class LastScreen extends Phaser.Scene {
 
   
     $('#textZoneid').hide();
+    $('#footeridP').hide();
 
 this.BG = this.add.image(0,0,'BG');
+this.BG.setVisible(false);
 this.darkG = this.add.image(0,0,'darkG');
 
 
