@@ -15,7 +15,7 @@ class Boot extends Phaser.Scene {
 
   constructor() {
     super("Boot");
-    console.log("@version 01");
+    console.log("@version V01");
   }
   
   preload() {
