@@ -15,12 +15,10 @@ class Boot extends Phaser.Scene {
 
   constructor() {
     super("Boot");
-    console.log("@version 1");
+    console.log("@version 01");
   }
   
   preload() {
-
-  
 
     this.load.image('BG','./assets/images/BG.png');
     this.load.image('darkG','./assets/images/darkG.png');
