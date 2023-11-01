@@ -15,7 +15,7 @@ class Boot extends Phaser.Scene {
 
   constructor() {
     super("Boot");
-    console.log("@version 10@ - Port:3011")
+    console.log("@version 1");
   }
   
   preload() {
